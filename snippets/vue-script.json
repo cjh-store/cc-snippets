@@ -37,7 +37,7 @@
             "  rules: {},",
             "},"
         ],
-        "description": "g-form-data"
+        "description": "g-form-data表单数据"
     },
     "g-form-validate": {
         "prefix": "g-form-validate",
@@ -98,14 +98,14 @@
         "body": [
             "import { sync } from 'vuex-pathify'"
         ],
-        "description": "引入vuex"
+        "description": "引入vuex-pathify"
     },
     "g-vuex-pathify-computed": {
         "prefix": "g-vuex-pathify-computed",
         "body": [
             "...sync(\"user\", [\"name\"]),"
         ],
-        "description": "vuex计算属性"
+        "description": "vuex-pathify计算属性"
     },
     "g-$confirm": {
         "prefix": "g-confirm",
@@ -114,20 +114,20 @@
             "        ",
             "        })"
         ],
-        "description": "g-$confirm"
+        "description": "g-$confirm确认弹框"
     },
     "g-$loading": {
         "prefix": "g-loading",
         "body": [
             "this.\\$loading()"
         ],
-        "description": "g-$loading"
+        "description": "g-$loading加载层"
     },
     "g-$msg": {
         "prefix": "g-$msg",
         "body": [
             "this.$msg('操作成功','${1|success,warning,danger,info|}')"
         ],
-        "description": "g-$msg"
+        "description": "g-$msg消息提示"
     }
 }
