@@ -1,0 +1,50 @@
+{
+    "name": "cc-snippet",
+    "displayName": "cc-snippet",
+    "description": "uview代码提示",
+    "version": "0.1.2",
+    "publisher": "tianli",
+    "icon": "images/logo.png",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "scripts": {
+        "vsce:package": "vsce package",
+        "vsce:publish": "vsce publish",
+        "vsce:patch": "vsce publish patch",
+        "git:push": "git add -A && git cz && git pull && git push"
+    },
+    "repository": {
+        "type": "git"
+    },
+    "keywords": [
+        "uniapp",
+        "uview",
+        "snippet"
+    ],
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "vue-html",
+                "path": "./snippets/vue-template.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/vue-script.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "commitizen": "^4.2.4",
+        "commitlint-config-gitmoji": "^2.2.5",
+        "cz-customizable": "^6.3.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-customizable"
+        }
+    }
+}

@@ -1,0 +1,133 @@
+{
+    "log": {
+        "prefix": "log",
+        "body": [
+            " console.log(\"$1 => \",$1)"
+        ],
+        "description": "log打印"
+    },
+    "g-form-data": {
+        "prefix": "g-form-data",
+        "body": [
+            "formOption: {",
+            "  ref: null,",
+            "  labelWidth: '90px',",
+            "  formList: {",
+            "    name: {",
+            "      type: ' ${1|slot,input,password,textarea,inputNumber,cascader,select,checkbox-group,radio-group,date,array|}',",
+            "      label: '姓名',",
+            "      span: 24,",
+            "      width: '50%',",
+            "      slot: false,",
+            "    },",
+            "    province: {",
+            "      type: 'select',",
+            "      label: '省',",
+            "      span: 24,",
+            "      list: [",
+            "        { id: '1', name: '四川' },",
+            "        { id: '2', name: '贵州' },",
+            "      ],",
+            "    },",
+            "  },",
+            "  formData: {",
+            "    province: '',",
+            "    name: '',",
+            "  },",
+            "  rules: {},",
+            "},"
+        ],
+        "description": "g-form-data"
+    },
+    "g-form-validate": {
+        "prefix": "g-form-validate",
+        "body": [
+            " this.formOption.ref.validate((valid) => {",
+            "          if (!valid) return",
+            "        })"
+        ],
+        "description": "g-form验证"
+    },
+    "g-form-methods": {
+        "prefix": "g-form-methods",
+        "body": [
+            "// 表单事件统一处理",
+            "handleEvent(formEvent) {",
+            "  let { key, data,row } = formEvent",
+            "  let { id } = data",
+            "  switch (key) {",
+            "    case 'keyName':",
+            "      break",
+            "    default:",
+            "      break",
+            "  }",
+            "},"
+        ],
+        "description": "g-form事件处理"
+    },
+    "g-table-data": {
+        "prefix": "g-table",
+        "body": [
+            "tableOption: {",
+            "  ref: null,",
+            "  tableData: [],",
+            "  column: [",
+            "    {",
+            "      prop: 'name',",
+            "      label: '名称',",
+            "    },",
+            "    {",
+            "      prop: 'cz',",
+            "      label: '操作',",
+            "      slot: true,",
+            "    },",
+            "  ],",
+            "},"
+        ],
+        "description": "g-table表格数据"
+    },
+    "g-page-data": {
+        "prefix": "g-page-data",
+        "body": [
+            "pageOption: { page: 1, page_size: 10, total: 0 },"
+        ],
+        "description": "g-page分页数据"
+    },
+    "g-vuex-pathify": {
+        "prefix": "g-vuex-pathify",
+        "body": [
+            "import { sync } from 'vuex-pathify'"
+        ],
+        "description": "引入vuex"
+    },
+    "g-vuex-pathify-computed": {
+        "prefix": "g-vuex-pathify-computed",
+        "body": [
+            "...sync(\"user\", [\"name\"]),"
+        ],
+        "description": "vuex计算属性"
+    },
+    "g-$confirm": {
+        "prefix": "g-confirm",
+        "body": [
+            "this.\\$confirm('是否确认删除？', () => {",
+            "        ",
+            "        })"
+        ],
+        "description": "g-$confirm"
+    },
+    "g-$loading": {
+        "prefix": "g-loading",
+        "body": [
+            "this.\\$loading()"
+        ],
+        "description": "g-$loading"
+    },
+    "g-$msg": {
+        "prefix": "g-$msg",
+        "body": [
+            "this.$msg('操作成功',${1|success,warning,danger,info|})"
+        ],
+        "description": "g-$msg"
+    }
+}
