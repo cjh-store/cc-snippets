@@ -1,99 +1,106 @@
 {
-    "g-dialog": {
-        "prefix": "g-dialog",
-        "body": [
-            "<g-dialog",
-            "  :dialog-visible.sync=\"dialogVisible\"",
-            "  width=\"500px\"",
-            "  title=\"弹窗标题\"",
-            "  :form=\"formOption\"",
-            "  @confirm=\"confirm\"",
-            ">",
-            "  <template slot=\"body\"></template>",
-            "</g-dialog>"
-        ],
-        "description": "g-dialog弹窗"
-    },
-    "g-form": {
-        "prefix": "g-form",
-        "body": [
-          "<g-form",
-          "  :ref-obj.sync=\"formOption.ref\"",
-          "  :form-option=\"formOption\"",
-          ">",
-          "  <!--  <template #slotName></template> -->",
-          "</g-form>"
-        ],
-        "description": "g-form表单"
-      },
-      "g-table": {
-        "prefix": "g-table",
-        "body": [
-          "<g-table :table-option=\"tableOption\">",
-          "  <template #cz=\"{ row }\">",
-          "    <el-button type=\"text\" @click=\"configurationRole('edit')\">",
-          "      配置",
-          "    </el-button>",
-          "    <el-button type=\"text\" @click=\"deleteRole(row)\">删除</el-button>",
-          "  </template>",
-          "</g-table>"
-        ],
-        "description": "g-table表格"
-      },
-      "g-page": {
-        "prefix": "g-page",
-        "body": [
-          "<g-page",
-          "  :page-option=\"pageOption\"",
-          "  :layouts=\"[]\"",
-          "  @change=\"getTableList\"",
-          "></g-page>"
-        ],
-        "description": "g-page分页"
-      },
-      "g-upload": {
-        "prefix": "g-upload",
-        "body": [
-            "<g-upload",
-            "   ref=\"upload\"",
-            "   type=\"picture-card\"",
-            "   :limit=\"2\"",
-            "   :multiple=\"true\"",
-            "   accept=\".jpg,.png,.jepg\"",
-            "   :size=\"5242880\"",
-            "   :list.sync=\"formOption.formData.imgList\"",
-            "   :oss=\"{",
-            "     application: 'goods',",
-            "     immediately: true,",
-            "   }\"",
-            "></g-upload>"
-        ],
-        "description": "g-upload上传"
-      },
-      "g-resize": {
-        "prefix": "g-resize",
-        "body": [
-          "<g-resize emit-on-mount @notify=\"handleResize\"></g-resize>"
-        ],
-        "description": "g-resize监听dom宽高"
-      },
-      "g-icon": {
-        "body": [
-          "<g-icon icon='$1' size='$2'></g-icon>"
-        ],
-        "prefix": "g-icon",
-        "description": "g-icon全局图标"
-      },
-      "g-cascader": {
-        "prefix": "g-cascader",
-        "body": [
-          "    <g-cascader",
-          "      ref=\"cascader\"",
-          "      v-model=\"formOption.formData.area\"",
-          "      :tree-data=\"areaData\"",
-          "      :options=\"{ value: 'id', label: 'label' }\"",
-          "    ></g-cascader>"
-        ],
-        "description": "g-cascader级联选择器"
-      }
+  "g-dialog": {
+    "prefix": "g-dialog",
+    "body": [
+      "<g-dialog",
+      "  :dialog-visible.sync=\"dialogVisible\"",
+      "  width=\"500px\"",
+      "  title=\"弹窗标题\"",
+      "  :form=\"formOption\"",
+      "  @confirm=\"confirm\"",
+      ">",
+      "  <template slot=\"body\"></template>",
+      "</g-dialog>"
+    ],
+    "description": "g-dialog弹窗"
+  },
+  "g-form": {
+    "prefix": "g-form",
+    "body": [
+      "<g-form",
+      "  :ref-obj.sync=\"formOption.ref\"",
+      "  :form-option=\"formOption\"",
+      ">",
+      "  <!--  <template #slotName></template> -->",
+      "</g-form>"
+    ],
+    "description": "g-form表单"
+  },
+  "g-table": {
+    "prefix": "g-table",
+    "body": [
+      "<g-table :table-option=\"tableOption\">",
+      "  <template #cz=\"{ row }\">",
+      "    <el-button type=\"text\" @click=\"configurationRole('edit')\">",
+      "      配置",
+      "    </el-button>",
+      "    <el-button type=\"text\" @click=\"deleteRole(row)\">删除</el-button>",
+      "  </template>",
+      "</g-table>"
+    ],
+    "description": "g-table表格"
+  },
+  "g-page": {
+    "prefix": "g-page",
+    "body": [
+      "<g-page",
+      "  :page-option=\"pageOption\"",
+      "  :layouts=\"[]\"",
+      "  @change=\"getTableList\"",
+      "></g-page>"
+    ],
+    "description": "g-page分页"
+  },
+  "g-upload": {
+    "prefix": "g-upload",
+    "body": [
+      "<g-upload",
+      "   ref=\"upload\"",
+      "   type=\"picture-card\"",
+      "   :limit=\"2\"",
+      "   :multiple=\"true\"",
+      "   accept=\".jpg,.png,.jepg\"",
+      "   :size=\"5242880\"",
+      "   :list.sync=\"formOption.formData.imgList\"",
+      "   :oss=\"{",
+      "     application: 'goods',",
+      "     immediately: true,",
+      "   }\"",
+      "></g-upload>"
+    ],
+    "description": "g-upload上传"
+  },
+  "g-resize": {
+    "prefix": "g-resize",
+    "body": [
+      "<g-resize emit-on-mount @notify=\"handleResize\"></g-resize>"
+    ],
+    "description": "g-resize监听dom宽高"
+  },
+  "g-icon": {
+    "body": [
+      "<g-icon icon='$1' size='$2'></g-icon>"
+    ],
+    "prefix": "g-icon",
+    "description": "g-icon全局图标"
+  },
+  "g-cascader": {
+    "prefix": "g-cascader",
+    "body": [
+      "    <g-cascader",
+      "      ref=\"cascader\"",
+      "      v-model=\"formOption.formData.area\"",
+      "      :tree-data=\"areaData\"",
+      "      :options=\"{ value: 'id', label: 'label' }\"",
+      "    ></g-cascader>"
+    ],
+    "description": "g-cascader级联选择器"
+  },
+  "g-editor": {
+    "prefix": "g-editor",
+    "body": [
+      "<g-editor v-model=\"formOption.formData.editor\"></g-editor>"
+    ],
+    "description": "g-editor富文本"
+  }
 }

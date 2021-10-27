@@ -1,8 +1,8 @@
 {
     "name": "cc-snippet",
     "displayName": "cc-snippet",
-    "description": "uview代码提示",
-    "version": "0.1.2",
+    "description": "admin-template代码提示",
+    "version": "0.2.0",
     "publisher": "tianli",
     "icon": "images/logo.png",
     "engines": {
