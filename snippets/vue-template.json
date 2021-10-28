@@ -99,7 +99,7 @@
   "g-editor": {
     "prefix": "g-editor",
     "body": [
-      "<g-editor v-model=\"formOption.formData.editor\"></g-editor>"
+      "<g-editor v-model=\"editor\"></g-editor>"
     ],
     "description": "g-editor富文本"
   }

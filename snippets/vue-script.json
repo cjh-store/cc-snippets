@@ -133,7 +133,7 @@
     "g-$msg": {
         "prefix": "g-$msg",
         "body": [
-            "this.$msg('操作成功','${1|success,warning,danger,info|}')"
+            "this.\\$msg('操作成功','${1|success,warning,danger,info|}')"
         ],
         "description": "g-$msg消息提示"
     }
