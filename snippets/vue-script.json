@@ -96,7 +96,7 @@
     "g-vuex-pathify": {
         "prefix": "g-vuex-pathify",
         "body": [
-            "import { sync } from 'vuex-pathify'"
+            "import { ${1|sync,get,make|} } from 'vuex-pathify'"
         ],
         "description": "引入vuex-pathify"
     },
@@ -106,6 +106,13 @@
             "...sync(\"user\", [\"name\"]),"
         ],
         "description": "vuex-pathify计算属性"
+    },
+    "g-vuex-pathify-mutations": {
+        "prefix": "g-vuex-pathify-mutations",
+        "body": [
+            "...make.mutations(state),"
+        ],
+        "description": "vuex-mutations"
     },
     "g-$confirm": {
         "prefix": "g-confirm",
