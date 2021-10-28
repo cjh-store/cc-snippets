@@ -1,5 +1,5 @@
-# cc-snippet 
+# cc-snippet vscode
 
-公司自用代码片段vscode插件
+公司自用代码片段 插件
 
 
