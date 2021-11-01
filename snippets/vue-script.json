@@ -117,17 +117,17 @@
     "g-$confirm": {
         "prefix": "g-confirm",
         "body": [
-            "        this.$confirm({ content: '是否确认删除' })",
+            "        this.\\$confirm({ content: '是否确认删除' })",
             "          .then((res) => {",
             "            console.log('res => ', res)",
             "          })"
         ],
         "description": "g-$confirm确认弹框"
     },
-    "g-alert弹窗": {
+    "g-$alert弹窗": {
         "prefix": "g-alert",
         "body": [
-            " this.$alert({ content: '消息内容' })"
+            " this.\\$alert({ content: '消息内容' })"
         ],
         "description": "g-alert弹窗"
     },
@@ -137,6 +137,13 @@
             "this.\\$loading()"
         ],
         "description": "g-$loading加载层"
+    },
+    "g-$notify": {
+        "prefix": "g-$notify通知",
+        "body": [
+            "this.\\$notify({ type: 'success', message: '内容' })"
+        ],
+        "description": "g-$notify"
     },
     "g-$msg": {
         "prefix": "g-$msg",
