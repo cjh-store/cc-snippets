@@ -148,8 +148,17 @@
     "g-$msg": {
         "prefix": "g-$msg",
         "body": [
-            "this.\\$msg('操作成功','${1|success,warning,danger,info|}')"
+            "this.\\$msg('操作成功','${1|success,warning,error,info|}')"
         ],
         "description": "g-$msg消息提示"
+    },
+    "g-tree": {
+        "prefix": "g-tree",
+        "body": [
+            "checkChange() {",
+            "        let { keys,nodes } = this.$refs.tree.getCheckedData(true)",
+            "      },"
+        ],
+        "description": "g-tree"
     }
 }

@@ -63,7 +63,7 @@
       "   :size=\"5242880\"",
       "   :list.sync=\"formOption.formData.imgList\"",
       "   :oss=\"{",
-      "   params: { application: 'goods' },",
+      "   params: { application: 'application' },",
       "     immediately: true,",
       "   }\"",
       "></g-upload>"
@@ -95,6 +95,26 @@
       "    ></g-cascader>"
     ],
     "description": "g-cascader级联选择器"
+  },
+  "g-tree": {
+    "prefix": "g-tree",
+    "body": [
+      "<g-tree",
+      "      ref=\"tree\"",
+      "      class=\"tree\"",
+      "      tree-name=\"classRef\"",
+      "      :tree-data=\"treeData\"",
+      "      :default-props=\"{ children: 'children', label: 'name' }\"",
+      "      :default-checked-keys=\"[]\"",
+      "      show-checkbox",
+      "      :multiple=\"false\"",
+      "      default-expand-all",
+      "      node-key=\"mixed_id\"",
+      "      :highlight-current=\"true\"",
+      "      @check=\"checkChange\"",
+      "    ></g-tree>"
+    ],
+    "description": "g-tree 树"
   },
   "g-editor": {
     "prefix": "g-editor",
