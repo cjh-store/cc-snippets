@@ -70,6 +70,7 @@
         "body": [
             "tableOption: {",
             "  ref: null,",
+            "  filter: {}, //表格筛选条件 变化会触发g-page change事件,将页码置为1",
             "  tableData: [],",
             "  column: [",
             "    {",
