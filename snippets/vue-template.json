@@ -123,33 +123,5 @@
       "<g-editor v-model=\"editor\"></g-editor>"
     ],
     "description": "g-editor富文本"
-  },
-  "glide-line-red": {
-    "prefix": ".glide-line-red",
-    "body": [
-      "glide-line-red"
-    ],
-    "description": "下划线-动画"
-  },
-  "glide-line-yellow": {
-    "prefix": ".glide-line-yellow",
-    "body": [
-      "glide-line-yellow"
-    ],
-    "description": "下划线-动画"
-  },
-  "glide-line-green": {
-    "prefix": ".glide-line-green",
-    "body": [
-      "glide-line-green"
-    ],
-    "description": "下划线-动画"
-  },
-  "glide-line-blue": {
-    "prefix": ".glide-line-blue",
-    "body": [
-      "glide-line-blue"
-    ],
-    "description": "下划线-动画"
   }
 }

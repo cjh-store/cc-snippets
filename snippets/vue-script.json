@@ -121,7 +121,7 @@
             "        this.\\$confirm({ content: '是否确认删除' })",
             "          .then((res) => {",
             "            console.log('res => ', res)",
-            "          })"
+            "          }).catch(()=>{})"
         ],
         "description": "g-$confirm确认弹框"
     },
