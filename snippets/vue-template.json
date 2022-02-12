@@ -123,5 +123,12 @@
       "<g-editor v-model=\"editor\"></g-editor>"
     ],
     "description": "g-editor富文本"
+  },
+  "g-empty空白占位": {
+    "prefix": "g-empty",
+    "body": [
+      " <g-empty></g-empty>"
+    ],
+    "description": "g-empty空白占位"
   }
 }
