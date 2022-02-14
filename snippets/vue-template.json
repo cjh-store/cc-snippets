@@ -60,8 +60,6 @@
       "   type=\"picture-card\"",
       "   :limit=\"2\"",
       "   :multiple=\"true\"",
-      "   accept=\".jpg,.png,.jepg\"",
-      "   :size=\"5242880\"",
       "   :list.sync=\"formOption.formData.imgList\"",
       "   :oss=\"{",
       "   params: { application: 'application' },",
