@@ -111,6 +111,7 @@
       "      default-expand-all",
       "      node-key=\"id\"",
       "      size=\"mini\"",
+      "      @radioChange=\"radioChange\"",
       "    >",
       "      <!-- 自定义节点 -->",
       "      <!-- <template #body=\"{ node }\">",
