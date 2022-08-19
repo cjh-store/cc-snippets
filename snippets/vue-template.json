@@ -31,10 +31,10 @@
     "body": [
       "<g-table :table-option=\"tableOption\">",
       "  <template #cz=\"{ row }\">",
-      "    <el-button type=\"text\" @click=\"configurationRole('edit')\">",
+      "    <el-button type=\"text\" @click=\"editItem(row)\">",
       "      配置",
       "    </el-button>",
-      "    <el-button type=\"text\" @click=\"deleteRole(row)\">删除</el-button>",
+      "    <el-button type=\"text\" @click=\"deleteItem(row)\">删除</el-button>",
       "  </template>",
       "</g-table>"
     ],

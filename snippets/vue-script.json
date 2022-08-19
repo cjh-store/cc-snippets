@@ -65,6 +65,28 @@
         ],
         "description": "g-form事件处理"
     },
+    "g-table-methods": {
+        "prefix": "g-table-methods",
+        "body": [
+            "getTableList(filter = {}) {",
+            "        this.tableOption.loading.open()",
+            "        getTeachingResearchList({",
+            "          ...this.pageOption,",
+            "          ...this.tableOption.filter,",
+            "          ...filter,",
+            "        }).then((res) => {",
+            "          this.tableOption.loading.close()",
+            "          this.tableOption.tableData = res.list",
+            "          this.pageOption.total = res.total",
+            "        })",
+            "      },",
+            " filterChange(filter) {",
+            "        this.pageOption.page = 1",
+            "        this.getTableList(filter)",
+            " },"
+        ],
+        "description": "g-table事件处理"
+    },
     "g-table-data": {
         "prefix": "g-table",
         "body": [
